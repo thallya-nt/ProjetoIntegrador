@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  width:100%;
+}
+h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #f6e2b9;
+}
+.formularioCliente {
+  background-color: blue;
+  color: #f6e2b9;
+  padding: 0.3rem;
+  border-radius: 5px;
+  max-width: 50%;
+  width: 40rem;
+}
+
+.componentesForm {
+  font-size: 1.2rem;
+  text-align: left;
+  padding-top: 1.2rem;
+  border-radius: 5px;
+  border-color: blue;
+}
+.btCadastro {
+  background-color: lightgreen;
+  border-radius: 5px;
+  border: none;
+  padding: 0.2rem;
+}
+.btCadastro:hover {
+  opacity: 0.8;
+}
