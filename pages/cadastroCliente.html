@@ -1,30 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRM</title>
-    <link rel="stylesheet" href="../styling/cadCLientStyle.css">
-</head>
-<body>
-    <div class="container">
-        <form class="formularioCliente">
-            <h1>Cadastro de Cliente</h1>
-            <div class="componentesForm">
-            <label for="nome">Nome:</label>
-            <input type="text" placeholder="digite o nome do cliente..."></input>
-            </div>
-            <div class="componentesForm">
-                <label for="tipo">Tipo de cliente:</label>
-                <select name="opcoes" id="opc">
-                    <option value="normal">normal</option>
-                    <option value="socio">socio</option>
-                    <option value="familiar">familiar</option>
-                </select>
-            </div>
-            <button type="submit" class="btCadastro">cadastrar</button>
-        </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="../styling/cadCLientStyle.css" />
+  </head>
+  <body>
+    <div class="container grad">
+      <form class="formularioCliente">
+        <h1>Cadastro de Cliente</h1>
+        <div class="componentesForm">
+          <label for="nomeC">Nome:</label>
+          <input
+            type="text"
+            id="nomeC"
+            placeholder="digite o nome do cliente..."
+          />
+        </div>
+        <div class="componentesForm">
+          <label for="opc">Tipo de cliente:</label>
+          <select name="opcoes" id="opc">
+            <option value="normal">normal</option>
+            <option value="socio">sócio</option>
+            <option value="familiar">familiar</option>
+          </select>
+        </div>
+        <button type="submit" class="btCadastro">
+          <strong>cadastrar</strong>
+        </button>
+      </form>
+      <p id="m"></p>
     </div>
     <script src="../js/cadClients.js"></script>
-</body>
+  </body>
 </html>
