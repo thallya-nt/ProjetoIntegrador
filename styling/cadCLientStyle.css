@@ -1,0 +1,53 @@
+.container {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  width: 100%;
+  height: 100%;
+  background-color: gainsboro;
+}
+h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #1e293b;
+}
+.formularioCliente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f8fafc;
+  color: black;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 0.3rem;
+  border-radius: 5px;
+  width:40rem;
+  max-width: 50%;
+  height: 20rem;
+  max-height: 50%;
+}
+
+.componentesForm {
+  font-size: 1.1rem;
+  text-align: center;
+  padding-top: 1.2rem;
+  border-radius: 5px;
+  border-color: transparent;
+}
+.btCadastro {
+  width: 4rem;
+  background-color: #5C7CFA;
+  border-radius: 5px;
+  border: none;
+  padding: 0.2rem;
+  transition: opacity 0.3;
+}
+.btCadastro:hover {
+  opacity: 0.8;
+}
