@@ -12,88 +12,107 @@ body {
 
 footer {
   text-align: center;
+  background-color: gainsboro;
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
+  padding: 10px;
 
-  gap: 6rem;
-  padding: 3rem;
+  gap: 20px;
   width: 100%;
   min-height: 100vh;
 
   background-color: #f8fafc;
 }
+
+.grad {
+  background-image: linear-gradient(to right, #5c7cfa, gainsboro);
+}
+
 .header {
   color: #1e293b;
   background-color: transparent;
 }
 
-.cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 15px;
-  flex: 1;
-  min-width: 300px;
-}
-
 .flatpickr-calendar {
   width: 100% !important;
-  max-width: 100%;
+  max-width: 100% !important;
+  box-shadow: none;
 }
 
 .flatpickr-innerContainer,
 .flatpickr-days,
 .dayContainer {
   width: 100% !important;
-  min-width: auto !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  height: 50vh;
 }
 
 .flatpickr-day.selected,
 .flatpickr-day.selected:hover {
   background: #5c7cfa !important;
   border-color: #5c7cfa !important;
-  color: white;
+  color: #1e293b;
 }
 .flatpickr-day:hover {
   background: #eef2ff !important;
   border-color: #eef2ff !important;
-  color: #1e293b;
+  color: #1e293b !important;
 }
 
 .calendar {
-  background-color: gainsboro;
-  width: 30%;
+  background-color: transparent;
+
+  flex: 0 0 58%;
+  min-width: 320px;
   border-radius: 2px;
-  height: 70vh;
-  min-width: 280px;
+  height: 50vh auto;
+  padding: 10px;
+  margin-left: 20px;
+
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.18);
+}
+
+.cards {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  flex: 1;
+  min-width: 300px;
+  margin-right: 90px;
 }
 
 .cardtype1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 56%;
   height: 30vh;
   border-radius: 2px;
   border: 2rem;
+  border-color: #5c7cfa;
 
-  background-color: #5c7cfa;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.18);
 }
 .cardtype2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 56%;
   height: 30vh;
   border-radius: 2px;
-  background-color: gainsboro;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-color: gainsboro;
+  background-color: transparent;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.18);
 }
 .upper {
   margin: 0;
@@ -110,6 +129,9 @@ main {
 }
 
 @media (max-width: 768px) {
+  .calendar{
+    margin-left: 22%;
+  }
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -119,8 +141,9 @@ main {
   }
   .cardtype1,
   .cardtype2 {
-    width: calc(60% - 20px);
+    width: calc(56% - 20px);
     min-width: 150px;
     max-width: 100%;
+    margin-left: 100px;
   }
 }
