@@ -1,27 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="../styling/homePagStyle.css">
-</head>
-<body>
-    <div class="main">
-        <div class="upper">
+    <link rel="stylesheet" href="../styling/homePagStyle.css" />
 
-        </div>
-        <div class="cardtype1">
-            <img src="../user-group-solid.png" alt="">
-        </div>
-        <div class="cardtype2"></div>
-        <div class="cardtype1">
-        </div>
-    </div>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+  </head>
+  <body>
+    <main class="grad">
+      <!-- CALENDÁRIO -->
+      <aside class="calendar">
+        <h3>calendario</h3>
+        <div id="calendario-inline"></div>
+      </aside>
 
+      <!--CARDS DE INFORMAÇÃO-->
+      <section class="cards">
+        <article class="cardtype1">
+          <i class="bi bi-people-fill icon"></i>
+          <span class="header"><strong>clientes</strong></span>
+          <div class="dashcont">
+            <p style="font-size: large"><strong>X</strong></p>
+            <p>clientes cadastrados</p>
+            <button>
+              <a href="cadastroCliente.html">
+                <i class="bi bi-person-add"></i>
+                add</a
+              >
+            </button>
+          </div>
+        </article>
 
-<footer>página em construção, funcinalidades não concluidas.</footer>
+        <article class="cardtype2">
+          <i class="bi bi-bag-fill icon"></i>
+          <span class="header"><strong>vendas</strong></span>
+          <div class="dashcont">
+            <p style="font-size: large"><strong>X</strong></p>
+            <p>venda realizadas</p>
+            <button>
+              <a href="cadastroVendas.html"
+                ><i class="bi bi-bag-plus"></i> add</a
+              >
+            </button>
+          </div>
+        </article>
+
+        <article class="cardtype1">
+          <i class="bi bi-person-circle"></i>
+          <span><strong>vendedores</strong></span>
+          <div class="dashcont">
+            <p>vendedores cadastrados</p>
+            <button>
+              <a href=" "><i class="bi bi-person-plus"></i> add</a>
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="grad"><p>Página em construção.</p></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="../js/home.js"></script>
-</body>
+  </body>
 </html>
