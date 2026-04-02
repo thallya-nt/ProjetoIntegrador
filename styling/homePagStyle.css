@@ -31,7 +31,7 @@ main {
 }
 
 .grad {
-  background-image: linear-gradient(to right, #5c7cfa, gainsboro);
+  background-image: linear-gradient(to right, gainsboro, #eef2ff);
 }
 
 .header {
@@ -76,7 +76,7 @@ main {
   padding: 10px;
   margin-left: 20px;
 
-   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.18);
 }
 
 .cards {
@@ -98,8 +98,7 @@ main {
   height: 30vh;
   border-radius: 2px;
   border: 2rem;
-  border-color: #5c7cfa;
-
+  border-color: gainsboro;
   background-color: transparent;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.18);
 }
@@ -127,9 +126,30 @@ main {
 .icon {
   color: #1e293b;
 }
+button {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  font-size: smaller;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.18);
+}
 
+button:hover {
+  border: 2px solid #5c7cfa;
+}
+a {
+  text-decoration: none;
+  color: #1e293b;
+}
+.dashcont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
 @media (max-width: 768px) {
-  .calendar{
+  .calendar {
     margin-left: 22%;
   }
   .cards {
