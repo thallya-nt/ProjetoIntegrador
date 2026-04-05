@@ -49,6 +49,7 @@ select {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   outline: none;
   cursor: pointer;
+  padding-top: 0;
 }
 
 input:focus,
@@ -67,14 +68,14 @@ select:focus {
 
   background-color: #f8fafc;
   color: #1e293b;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px -5px rgba(0, 0, 0, 1.8);
 
   border-radius: 5px;
-  width: 50%;
-  max-width: 28rem;
-  height: 20rem;
-  max-height: 50vh;
-  gap: 0.1rem;
+  width: 40rem;
+  max-width: 50%;
+  height: 60rem;
+  max-height: 90vh;
+  gap: 8px;
 }
 
 .componentesForm {
@@ -83,14 +84,23 @@ select:focus {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 1px;
 
   border-radius: 5px;
   border-color: transparent;
 
-  width: 80%;
-  height: 50vh;
+  width: 60%;
+  height: auto;
+  max-height: 100vh;
 }
-
+.bt {
+  height: fit-content;
+  width: 100%;
+  padding: 8px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 .btCadastro {
   background-color: #5c7cfa;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
