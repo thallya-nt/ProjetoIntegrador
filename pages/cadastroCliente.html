@@ -7,31 +7,51 @@
     <link rel="stylesheet" href="../styling/cadCLientStyle.css" />
   </head>
   <body>
-    <div class="container grad">
+    <main class="container grad">
       <form class="formularioCliente">
         <h1>Cadastro de Cliente</h1>
+
         <div class="componentesForm">
           <label for="nomeC">Nome:</label>
           <input
             type="text"
             id="nomeC"
-            placeholder="digite o nome do cliente..."
+            placeholder="Digite o nome do cliente..."
           />
         </div>
         <div class="componentesForm">
           <label for="opc">Tipo de cliente:</label>
           <select name="opcoes" id="opc">
-            <option value="normal">normal</option>
-            <option value="socio">sócio</option>
-            <option value="familiar">familiar</option>
+            <option value="normal">Normal</option>
+            <option value="socio">Sócio</option>
+            <option value="familiar">Familiar</option>
           </select>
         </div>
-        <button type="submit" class="btCadastro">
-          <strong>cadastrar</strong>
-        </button>
+        <div class="componentesForm">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" placeholder="Digite o email..." />
+        </div>
+        <div class="componentesForm">
+          <label for="referencia">Referência: </label>
+          <input type="text" placeholder="Digite uma referência válida" />
+        </div>
+        <div class="componentesForm">
+          <label for="end">Endereço: </label>
+          <input type="text" placeholder="Digite um endereço válido" />
+        </div>
+        <div class="componentesForm">
+          <label for="cntt">Contato: </label>
+          <input type="text" placeholder="Digite um número válido" />
+        </div>
+          <div class="bt">
+            <button type="submit" class="btCadastro">
+              <strong>cadastrar</strong>
+            </button>
+          </div>
+        </div>
       </form>
       <p id="m"></p>
-    </div>
+    </main>
     <script src="../js/cadClients.js"></script>
   </body>
 </html>
