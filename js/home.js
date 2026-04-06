@@ -44,7 +44,8 @@ openBt.forEach(button => {
     } else{
       clientes.forEach((cliente) => {
       const p = document.createElement("p");
-      p.innerHTML = `<strong>${cliente.nome}</strong> :  tipo - ${cliente.tipo} <br> email - ${cliente.email} <br> referência - ${cliente.referencia} <br> endereço - ${cliente.endereco} <br> contato - ${cliente.contato}`;
+      p.classList.add("dataBlock");
+      p.innerHTML = `<strong>${cliente.nome}</strong> (${cliente.id}):<br> tipo - ${cliente.tipo} <br> email - ${cliente.email} <br> referência - ${cliente.referencia} <br> endereço - ${cliente.endereco} <br> contato - ${cliente.contato}`;
 
       clientesLista.appendChild(p);
     });
