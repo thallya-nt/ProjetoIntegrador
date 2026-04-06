@@ -38,6 +38,7 @@ openBt.forEach(button => {
     const clientes = JSON.parse(localStorage.getItem("clientes")) || [];
     clientesLista.innerHTML = "";
 
+    // LISTAGEM DE CLIENTES DENTRO DO MODAL
     if(clientes.length === 0) {
       clientesLista.innerHTML = "<p> Nenhum cliente cadastrado!</p>";
     } else{
@@ -48,7 +49,7 @@ openBt.forEach(button => {
       clientesLista.appendChild(p);
     });
   }
-   modal.showModal();
+   modal.showModal();   //MOSTRA O "POPUP" 
   });
 });
 
@@ -58,6 +59,6 @@ closeBt.forEach(button => {
   button.addEventListener('click', () =>{
      const modalId = button.getAttribute('data-modal');
     const modal = document.getElementById(modalId);
-   modal.close();
+   modal.close(); // FECHA O "POPUP"
   })
 })
