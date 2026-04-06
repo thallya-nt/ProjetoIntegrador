@@ -38,7 +38,7 @@ main {
   color: #1e293b;
   background-color: transparent;
 }
-
+/*CALENDÁRIO */
 .flatpickr-calendar {
   width: 100% !important;
   max-width: 100% !important;
@@ -79,6 +79,7 @@ main {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.18);
 }
 
+/*CARDS DE CADASTRO E VISUALIZAÇÃO DE DADOS*/
 .cards {
   display: flex;
   justify-content: flex-end;
@@ -123,10 +124,61 @@ main {
   color: #1e293b;
 }
 
-.icon {
+/*POPUP DE CLIENTES*/
+
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 60vh;
+  border: none;
+  border-radius: 2px;
+  background-color: #f8fafc;
+  opacity: 90%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.18);
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+dialog::backdrop {
+  background-color: (0, 0, 0, 0.5);
+}
+.modalHead {
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalBody {
+  padding: 8px;
+  border: solid gainsboro;
+  opacity: 100%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.18);
+  border-radius: 2px;
+}
+.closeMd {
+  border: none;
+  border-radius: 2px;
+  background-color: transparent;
+  width: 25px;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  padding-bottom: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.18);
+}
+/*ÍCONES */
+i {
   color: #1e293b;
 }
-button {
+
+/*BOTÕES*/
+button:not(.closeMd) {
   background-color: transparent;
   border: none;
   border-radius: 5px;
@@ -134,20 +186,25 @@ button {
   font-size: smaller;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.18);
 }
-
-button:hover {
+button:hover{
   border: 2px solid #5c7cfa;
 }
+
+/*LINKS*/
 a {
   text-decoration: none;
   color: #1e293b;
 }
+
+/*CONTADOR DE CLIENTES*/
 .dashcont {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
+
+/*RESPONSIVIDADE*/
 @media (max-width: 768px) {
   .calendar {
     margin-left: 22%;

@@ -27,17 +27,34 @@
       <!--CARDS DE INFORMAÇÃO-->
       <section class="cards">
         <article class="cardtype1">
-          <i class="bi bi-people-fill icon"></i>
+          <i class="bi bi-people-fill"></i>
           <span class="header"><strong>clientes</strong></span>
           <div class="dashcont">
             <p style="font-size: large" id="contador"><strong>X</strong></p>
-            <p>clientes cadastrados</p>
             <button>
               <a href="cadastroCliente.html">
                 <i class="bi bi-person-add"></i>
                 add</a
               >
             </button>
+          <!--obs.: colocar os botões lado a lado dps-->
+
+            <!--POPUP QUE MOSTRA OS  DADOS DOS CLIENTES-->
+            <button class="openMd" data-modal="btLista">
+              <i class="bi bi-eye"></i> 
+              show all
+            </button>
+            <dialog id="btLista">
+              <button class="closeMd" data-modal="btLista">
+                <i class="bi bi-x-square"></i>
+              </button>
+              <div class="modalHead">
+              <h2>Clientes:</h2>
+              </div>
+              <div class="modalBody" id="cList">
+                <p></p>
+              </div>
+            </dialog>
           </div>
         </article>
 
@@ -71,6 +88,7 @@
     <footer class="grad"><p>Página em construção.</p></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../js/cadClients.js"></script>
     <script src="../js/home.js"></script>
   </body>
 </html>
