@@ -172,6 +172,12 @@ dialog::backdrop {
   padding-bottom: 6px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.18);
 }
+.dataBlock{
+  border: none;
+  border-radius: 2px;
+  border-bottom: solid #1e293b ;
+  padding-bottom: 1.5rem;
+} /* ESTILIZAÇÃO ADICIONAL PARA LISTAGEM*/
 /*ÍCONES */
 i {
   color: #1e293b;
